@@ -25,3 +25,18 @@ numbers.forEach(function(value){
     console.log(value);
 });
 
+let add =(a,b)=>{
+    return a+b;
+}
+
+let fib= (n) =>{
+    if(n==1){
+        return 1;
+    }
+    if(n<=0){
+        return 0;
+    }
+    return fib(n-1)+fib(n-2);
+}
+
+console.log(fib(6));
