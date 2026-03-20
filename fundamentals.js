@@ -40,3 +40,32 @@ let fib= (n) =>{
 }
 
 console.log(fib(6));
+
+let user={
+    name:"Rishabh",
+    age:"20",
+    isAdmin:"true",
+}
+console.log(user);
+
+let user2 = new Object();;
+user2.name="yashraj";
+user2.age="27";
+console.log(user2);
+
+// dot notation
+console.log(user2.name);
+//bracket notation
+console.log(user2["name"]);
+
+// OBJECTS WITH FUNCTION AND THIS KEYWORD
+
+let fName = "doubledore";
+let person ={
+    fName : "aniket",
+    greet: function(){
+        return "Hello " + this.fName;
+    }
+}
+
+console.log(person.greet());
