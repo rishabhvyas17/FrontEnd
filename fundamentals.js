@@ -69,3 +69,51 @@ let person ={
 }
 
 console.log(person.greet());
+
+//Nested Objects
+
+let company = {
+    name : "Google",
+    location:{
+        address: "Indore",
+        pincode : "452020"
+    }
+};
+
+console.log(company)
+console.log(company.location);
+console.log(company.location.pincode);
+
+//travesal of object in js
+
+let user3={
+    name:"Rishabh",
+    age:"20",
+    isAdmin:"true",
+}
+for (let key in user3) {
+    console.log("key : ",key,", value : ",user3.key);
+    
+}
+
+for(key in company){
+    if(typeof company[key]==='object'){
+        for(let innerkey in company[key]){
+            console.log(innerkey, company[key][innerkey]);
+        }
+    }
+    else{
+        console.log(key, company[key]);
+    }
+}
+
+function printObject(company){
+    for(i in company){
+    if(typeof company[key] === 'object'){
+        printObject(company[i]);
+    }
+    else{
+        console.log(i.company[key]);
+    }
+}
+};
