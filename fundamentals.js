@@ -109,11 +109,14 @@ for(key in company){
 
 function printObject(company){
     for(i in company){
-    if(typeof company[key] === 'object'){
+    if(typeof company[i] === 'object'){
+        console.log("object",i);
         printObject(company[i]);
     }
     else{
-        console.log(i.company[key]);
+        console.log(company[i]);
     }
 }
 };
+
+printObject(company);
