@@ -9,6 +9,7 @@ let myPromise = new Promise((resolve,reject)=>{
     }
 })
 
+
 myPromise.then(result =>{
     console.log("result",result)
 })
@@ -21,3 +22,5 @@ myPromise.then(result =>{
 .finalyy(()=>{
     console.log("Completed")
 })
+
+//E.g. - Promise is used for dependent tasks , when we want the later one to execute only after the first one is executed completely. It is an example of Atomicity.
