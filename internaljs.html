@@ -1,0 +1,30 @@
+<div id ="root"></div>
+
+<script>
+    const root = document.getElementById("root");
+    let count =0;
+
+    function render(){
+        root .innerHTML=`
+        <h1>${count}</h1>
+        <button onclick="increment()">Increase</button>
+        <button onclick="decrement()">Decrease</button>
+        <button onclick="reset()">Reset</button>
+        `;
+    }
+
+    function increment(){
+        count++;
+        render();
+    }
+    function decrement(){
+        count--;
+        render();
+    }
+    function reset(){
+        count = 0;
+        render();
+    }
+
+    render();
+</script>
